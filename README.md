@@ -98,7 +98,7 @@ pokedex-abi/
 ```bash
 # Clonar el repositorio
 git clone https://github.com/Abisaigeronimo/Pokedex-Suprema-App.git
-cd pokedex-abi
+cd pokedex-app
 
 
 # Instalar dependencias
@@ -204,6 +204,8 @@ npx expo start --web
 - Integración de imágenes locales/remotas.  
 
 ### Estructura básica para crear pantallas nuevas (TypeScript):
+```typescript
+
 export function NewScreen() {
 return (
 <View style={{ flex: 1 }}>
@@ -211,8 +213,8 @@ return (
 </View>
 );
 }
+```
 
-text
 
 ## 9. Troubleshooting
 
@@ -224,11 +226,13 @@ text
 | WiFi/Conexión lenta     | npx expo start --tunnel        |
 
 ### Comandos útiles:
+```bash
 npx expo doctor
 npx expo start --clear
 rm -rf node_modules package-lock.json && npm install
+```
 
-text
+
 
 ## 10. Recursos y Documentación
 
