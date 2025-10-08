@@ -37,18 +37,31 @@ Pokedex es una aplicación móvil desarrollada con React Native y Expo para expl
 - TypeScript: Integración completa  
 
 ### Herramientas Requeridas:
-- Node.js: v14 o superior  
-- NPM/Yarn: NPM 6+ o Yarn 1.22.19+  
-- Expo CLI: 6.3.0+  
-- Expo Go app: Para pruebas en dispositivo físico  
+- **Node.js:** v18.17.0 o superior
+  ```bash
+  node --version
+  ```
+- **NPM:** 9.0.0+ o Yarn v1.22.19+
+  ```bash
+  npm --version
+  # o
+  yarn --version
+  ```
+- **Expo CLI:** v6.3.0+
+  ```bash
+  npx expo --version
+  ```
+- **Android Studio:** v2022.3+ con Android SDK 33+ **o** Expo Go app en dispositivo físico
+  ```bash
+  # Verificar Android SDK
+  adb --version
+  ```
 
 ### Verificación de Entorno:  
-node --version
-npm --version
-npx expo --version
+```bash
 npx expo doctor
+```
 
-text
 
 ## 4. Estructura del Proyecto
 ### Organización de Archivos:
@@ -71,23 +84,26 @@ pokedex-abi/
 ```
 
 
-text
 
 ### Arquitectura:
-- App.tsx: Enrutador central tipo Stack  
-- HomeScreen.tsx: Lista principal y filtrado  
-- PokemonDetailScreen.tsx: Detalles individuales  
-- constants/colors.ts: Paleta temática y colores por tipo  
-- types/pokemon.types.ts: Interfaces y modelos usados en la app  
+- **App.tsx**: Enrutador central tipo Stack  
+- **HomeScreen**.tsx: Lista principal y filtrado  
+- **PokemonDetailScreen**.tsx: Detalles individuales  
+- **constants/colors.ts**: Paleta temática y colores por tipo  
+- **types/pokemon.types.ts**: Interfaces y modelos usados en la app  
 
 ## 5. Instalación y Configuración
 
 ### Instalación de Dependencias:
+```bash
+# Clonar el repositorio
 git clone https://github.com/Abisaigeronimo/Pokedex-Suprema-App.git
 cd pokedex-abi
-npm install
 
-text
+
+# Instalar dependencias
+npm install
+```
 
 ### Dependencias Esenciales:
 
@@ -102,38 +118,61 @@ text
 | react-native                 | 0.81.4    | React Native core                 |
 
 ### Verificar instalación:
+```bash
 npm list --depth=0
-
-text
+```
 
 ## 6. Ejecución de la Aplicación
 
-### Scripts disponibles:
+### Scripts Disponibles:
+```bash
+# Iniciar servidor de desarrollo
 npm start
-
-o
+# o
 npx expo start
 
-text
+# Ejecutar en Android (emulador/dispositivo)
+npm run android
+# o
+npx expo start --android
 
-- Android/iOS: Usa Expo Go con QR o emulador/simulador.  
-- Web: Se abre en navegador automáticamente.  
-- Nota: Emulador Android debe estar iniciado antes. Para redes complicadas, usar túnel:  
-npx expo start --tunnel
+# Ejecutar en iOS (solo macOS)
+npm run ios
+# o  
+npx expo start --ios
 
-text
+# Ejecutar en web
+npm run web
+# o
+npx expo start --web
+```
 
-### Pasos para correr:
-- Instala dependencias: `npm install`  
-- Inicia el servidor: `npm start`  
-- Conecta tu dispositivo o abre el emulador.  
-- Escanea el QR (Expo Go) y prueba la app.  
+### Primera Ejecución:
+1. **Instalar dependencias:**
+   ```bash
+   npm install
+   ```
+
+2. **Iniciar el servidor de desarrollo:**
+   ```bash
+   npm start
+   ```
+
+3. **Conectar dispositivo:**
+   - **Android:** Usar Expo Go o emulador
+   - **iOS:** Usar Expo Go o simulador
+   - **Web:** Se abrirá automáticamente en el navegador
+
+### Notas de Entorno:
+- **Emulador Android:** Debe estar iniciado antes de ejecutar `npm run android`
+- **Dispositivo físico:** Usar Expo Go y escanear QR code
+- **Túnel para redes restrictivas:** `npx expo start --tunnel`.  
 
 ## 7. Funcionalidades de la Aplicación
 
-### Pantalla Principal (HomeScreen)
+### Pantalla Principal (HomeScreen):
 
-![Pantalla principal](assets/pantalla principal.jpeg)
+![Pantallaprincipal](assets/pantalla principal.jpeg)
 
 - Grid de Pokémon: Muestra cuatro Pokémon.  
 - Búsqueda: Filtra por nombre en tiempo real.  
