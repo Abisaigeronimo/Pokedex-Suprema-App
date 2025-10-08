@@ -172,7 +172,7 @@ npx expo start --web
 
 ### Pantalla Principal (HomeScreen):
 
-![Pantallaprincipal](assets/pantalla principal.jpeg)
+![Pantallaprincipal](assets/pantalladetalles.jpeg)
 
 - Grid de Pokémon: Muestra cuatro Pokémon.  
 - Búsqueda: Filtra por nombre en tiempo real.  
