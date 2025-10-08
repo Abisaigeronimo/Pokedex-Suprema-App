@@ -128,11 +128,17 @@ text
 ## 7. Funcionalidades de la Aplicación
 
 ### Pantalla Principal (HomeScreen)
+
+![Pantalla principal](assets/pantalla principal.jpeg)
+
 - Grid de Pokémon: Muestra cuatro Pokémon.  
 - Búsqueda: Filtra por nombre en tiempo real.  
 - Diseño: Tarjetas coloridas por tipo.  
 
 ### Pantalla de Detalles (PokemonDetailScreen)
+
+![Pantalla detalles](assets/pikachu pantalla detalles.jpeg)
+
 - Datos mostrados: Imagen, nombre, tipos, altura y peso.  
 - Navegación fácil: Botón “regresar” a la lista.  
 - Preparada para expandirse con habilidades, estadísticas, etc.  
@@ -190,6 +196,6 @@ text
 
 ---
 
-Desarrollado por: Abisai Geronimo Ortiz  
-Última actualización: 8 de octubre 2025  
-Versión: 0.1.0  
+**Desarrollado por:** Abisai Geronimo Ortiz  
+**Última actualización:** 8 de octubre 2025  
+**Versión:** 0.1.0  
