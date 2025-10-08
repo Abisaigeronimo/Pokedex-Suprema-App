@@ -51,6 +51,8 @@ npx expo doctor
 text
 
 ## 4. Estructura del Proyecto
+### Organización de Archivos:
+```
 
 pokedex-abi/
 ├── App.tsx # Componente raíz de la app
@@ -66,6 +68,8 @@ pokedex-abi/
 ├── types/ # Interfaces y tipos TS para Pokémon
 ├── hooks/ # (Futuros hooks personalizados)
 └── utils/ # (Constantes y utilidades)
+```
+
 
 text
 
