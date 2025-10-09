@@ -73,8 +73,8 @@ pokedex-abi/
 ├── tsconfig.json # Configuración TypeScript
 ├── assets/ # Iconos e imágenes
 ├── screens/ # Pantallas principales
-│ ├── HomeScreen.tsx
-│ └── PokemonDetailScreen.tsx
+  ├── HomeScreen.tsx
+  └── PokemonDetailScreen.tsx
 ├── components/ # (Preparado para componentes reutilizables)
 ├── constants/ # Colores, etiquetas, configuración API
 ├── services/ # (Preparado para llamadas a pokeapi)
