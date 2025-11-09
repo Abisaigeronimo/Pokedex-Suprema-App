@@ -14,7 +14,7 @@ Pokedex es una aplicación móvil desarrollada con React Native y Expo para expl
 ### Características Principales:
 - 📱 Lista de Pokémon: Visualización tipo grid de varios Pokémon.  
 - 🔍 Búsqueda Rápida: Filtrado instantáneo por nombre.  
-- 🎨 Interfaz Moderna: Tema oscuro y componentes estilizados.  
+- 🎨 Interfaz Moderna: Componentes estilizados.  
 - 🧭 Navegación Intuitiva: Navegación stack, transiciones fluidas.  
 - 🧪 Datos Ejemplo: Bulbasaur, Charmander, Squirtle, Pikachu precargados.  
 
@@ -67,20 +67,44 @@ npx expo doctor
 ### Organización de Archivos:
 ```
 
+
 pokedex-abi/
-├── App.tsx # Componente raíz de la app
+├── App.tsx # Componente raíz y navigator (Stack)
+├── index.ts # Registro raíz de Expo
 ├── package.json # Dependencias y scripts
+├── package-lock.json # Lockfile de npm
 ├── tsconfig.json # Configuración TypeScript
-├── assets/ # Iconos e imágenes
-├── screens/ # Pantallas principales
-  ├── HomeScreen.tsx
-  └── PokemonDetailScreen.tsx
-├── components/ # (Preparado para componentes reutilizables)
-├── constants/ # Colores, etiquetas, configuración API
-├── services/ # (Preparado para llamadas a pokeapi)
-├── types/ # Interfaces y tipos TS para Pokémon
-├── hooks/ # (Futuros hooks personalizados)
-└── utils/ # (Constantes y utilidades)
+├── app.json # Configuración Expo (nombre, iconos, plugins)
+├── babel.config,.js # Config Babel (nota: nombre con coma en repo)
+├── eas.json # Configuración EAS (builds)
+├── README.md # Documentación del proyecto
+├── .gitignore # Ignorados por Git
+├── assets # Iconos e imágenes
+│ ├── adaptive-icon.png
+│ ├── favicon.png
+│ ├── icon.png
+│ ├── pantalladetalles.jpeg
+│ ├── pantallaprincipal.jpeg
+│ └── splash-icon.png
+├── screens # Pantallas principales
+│ ├── HomeScreen.tsx
+│ └── PokemonDetailScreen.tsx
+├── components # Componentes reutilizables
+│ ├── PokemonCard.tsx
+│ ├── EmptyState.tsx
+│ ├── ErrorScreen.tsx
+│ └── LoadingScreen.tsx
+├── services # Lógica para la PokeAPI
+│ └── pokeApi.service.ts
+├── types # Tipos TypeScript del dominio
+│ └── pokemon.types.ts
+├── hooks # Hooks personalizados
+│ └── usePokemon.ts
+├── constants # Constantes (colores, etc.)
+│ └── colors.ts
+├── utils # Utilidades/helpers
+│ └── helpers.ts
+└── node_modules (omitido en árbol)
 ```
 
 
