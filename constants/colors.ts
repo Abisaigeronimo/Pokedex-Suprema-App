@@ -43,9 +43,31 @@ export const STAT_LABELS: { [key: string]: string } = {
   speed: 'Velocidad',
 };
 
+// Etiquetas de tipos en español
+export const TYPE_LABELS: { [key: string]: string } = {
+  normal: 'Normal',
+  fire: 'Fuego',
+  water: 'Agua',
+  electric: 'Eléctrico',
+  grass: 'Planta',
+  ice: 'Hielo',
+  fighting: 'Lucha',
+  poison: 'Veneno',
+  ground: 'Tierra',
+  flying: 'Volador',
+  psychic: 'Psíquico',
+  bug: 'Bicho',
+  rock: 'Roca',
+  ghost: 'Fantasma',
+  dragon: 'Dragón',
+  dark: 'Siniestro',
+  steel: 'Acero',
+  fairy: 'Hada',
+};
+
 // Configuración de la API
 export const API_CONFIG = {
   BASE_URL: 'https://pokeapi.co/api/v2',
   LIMIT: 20,
-  TOTAL_POKEMON: 1010,
+  TOTAL_POKEMON: 1010, // Gen 1-9
 };

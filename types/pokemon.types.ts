@@ -72,6 +72,7 @@ export interface PokemonApiResponse {
   abilities: Array<{
     ability: {
       name: string;
+      url: string;
     };
   }>;
   species: {
@@ -87,5 +88,10 @@ export interface PokemonSpeciesResponse {
     language: {
       name: string;
     };
+  }>;
+  // Algunos endpoints de especie incluyen nombres localizados
+  names?: Array<{
+    name: string;
+    language: { name: string };
   }>;
 }
