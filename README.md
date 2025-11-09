@@ -16,7 +16,7 @@ Pokedex es una aplicación móvil desarrollada con React Native y Expo para expl
 - 🔍 Búsqueda Rápida: Filtrado instantáneo por nombre.  
 - 🎨 Interfaz Moderna: Componentes estilizados.  
 - 🧭 Navegación Intuitiva: Navegación stack, transiciones fluidas.  
-- 🧪 Datos Ejemplo: Bulbasaur, Charmander, Squirtle, Pikachu precargados.  
+ 
 
 ### Funcionalidades Implementadas:
 - Búsqueda y listado de Pokémon en tarjetas.  
