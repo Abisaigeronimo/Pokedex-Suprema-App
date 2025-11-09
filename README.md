@@ -198,7 +198,7 @@ npx expo start --web
 
 ![Pantallaprincipal](assets/pantallaprincipal.jpeg)
 
-- Grid de Pokémon: Muestra cuatro Pokémon.  
+- Grid de Pokémon: Muestra todos los Pokémon de primero al ultimo.  
 - Búsqueda: Filtra por nombre en tiempo real.  
 - Diseño: Tarjetas coloridas por tipo.  
 
@@ -210,20 +210,11 @@ npx expo start --web
 - Navegación fácil: Botón “regresar” a la lista.  
 - Preparada para expandirse con habilidades, estadísticas, etc.  
 
-### Pokémon de ejemplo:
-- Bulbasaur  
-- Charmander  
-- Squirtle  
-- Pikachu  
-
 ## 8. Desarrollo y Extensión
 
-### Siguientes mejoras sugeridas:
-- Conexión real a PokéAPI para obtener datos reales.  
-- Favoritos persistentes (AsyncStorage).  
-- Filtro y búsqueda avanzada.  
-- Pantalla por categorías (tipos).  
-- Detalles avanzados y más información.  
+### Siguientes mejoras sugeridas:  
+- Favoritos persistentes (AsyncStorage).   
+- Pantalla por categorías (tipos).    
 - Soporte offline (future).  
 - Integración de imágenes locales/remotas.  
 
