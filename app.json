@@ -1,29 +1,19 @@
 {
   "expo": {
-  "name": "POKEDEX ABI",
+    "name": "POKEDEX ABI",
     "slug": "pokedex-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#DC0A2D"
-    },
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.yourcompany.pokedex",
-      "buildNumber": "1.0.0"
+      "bundleIdentifier": "com.yourcompany.pokedex"
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#DC0A2D"
-      },
       "package": "com.yourcompany.pokedex",
       "versionCode": 1,
       "permissions": [
@@ -31,20 +21,11 @@
       ]
     },
     "web": {
-      "favicon": "./assets/favicon.png",
       "bundler": "metro"
     },
-    "plugins": [
-      [
-        "expo-screen-orientation",
-        {
-          "initialOrientation": "PORTRAIT"
-        }
-      ]
-    ],
     "extra": {
       "eas": {
-        "projectId": "your-project-id-here"
+        "projectId": "1172c84c-9fbc-4f15-a27a-312aa8e4385c"
       }
     }
   }
